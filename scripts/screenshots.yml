@@ -1,0 +1,42 @@
+---
+# Minimal, editable list of high‑impact screenshot targets for the deck.
+# Fields per item:
+# - name: slug used in filename prefix (required if multiple similar URLs)
+# - url: page URL to capture (required)
+# - devices: [desktop|mobile] list or single device (optional; default: desktop)
+# - delay_ms: wait before capture in milliseconds (optional; default: 1500)
+# - full_page: true|false for full-height capture (optional; default: false)
+
+- name: 01-homepage
+  url: https://www.designrush.com/
+  devices: [desktop, mobile]
+
+- name: 02-category-web-design
+  url: https://www.designrush.com/agency/web-design
+  devices: [desktop, mobile]
+
+- name: 03-category-seo
+  url: https://www.designrush.com/agency/seo
+  devices: [desktop, mobile]
+
+- name: 04-directory-root
+  url: https://www.designrush.com/agency
+  devices: [desktop, mobile]
+
+- name: 05-geo-new-york-web-design
+  url: https://www.designrush.com/agency/web-design/new-york
+  devices: [desktop, mobile]
+
+- name: 06-trends
+  url: https://www.designrush.com/trends
+  devices: [desktop]
+
+- name: 07-404
+  url: https://www.designrush.com/404
+  devices: [desktop, mobile]
+
+# SERP examples (uncomment if permitted)
+# - name: 08-serp-web-design-agency
+#   url: https://www.google.com/search?q=web+design+agency
+#   devices: [desktop]
+

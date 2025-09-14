@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Keyword Distribution by Position",
+  "data": {
+    "values": [
+      {
+        "bucket": "01-03",
+        "keywords": 4967
+      },
+      {
+        "bucket": "04-10",
+        "keywords": 3871
+      },
+      {
+        "bucket": "11-20",
+        "keywords": 960
+      },
+      {
+        "bucket": "21-50",
+        "keywords": 200
+      },
+      {
+        "bucket": "51+",
+        "keywords": 2
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "bucket",
+      "type": "nominal",
+      "sort": null
+    },
+    "y": {
+      "field": "keywords",
+      "type": "quantitative"
+    }
+  },
+  "title": "Keyword Distribution by Position"
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Traffic by Category",
+  "data": {
+    "values": [
+      {
+        "category": "agency",
+        "traffic": 63849.0
+      },
+      {
+        "category": "other",
+        "traffic": 9958.0
+      },
+      {
+        "category": "trends",
+        "traffic": 3583.0
+      },
+      {
+        "category": "geo",
+        "traffic": 2641.0
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "category",
+      "type": "nominal",
+      "sort": null
+    },
+    "y": {
+      "field": "traffic",
+      "type": "quantitative"
+    }
+  },
+  "title": "Traffic by Category"
+}

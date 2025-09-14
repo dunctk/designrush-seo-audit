@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Traffic by Service (Top 12)",
+  "data": {
+    "values": [
+      {
+        "service": "web_design",
+        "traffic": 15680.0
+      },
+      {
+        "service": "other",
+        "traffic": 15217.0
+      },
+      {
+        "service": "seo",
+        "traffic": 11633.0
+      },
+      {
+        "service": "web_dev",
+        "traffic": 11171.0
+      },
+      {
+        "service": "digital_marketing",
+        "traffic": 5666.0
+      },
+      {
+        "service": "ppc",
+        "traffic": 3480.0
+      },
+      {
+        "service": "mobile_app",
+        "traffic": 3205.0
+      },
+      {
+        "service": "it_services",
+        "traffic": 2676.0
+      },
+      {
+        "service": "advertising",
+        "traffic": 2125.0
+      },
+      {
+        "service": "video",
+        "traffic": 1970.0
+      },
+      {
+        "service": "software_dev",
+        "traffic": 1797.0
+      },
+      {
+        "service": "social",
+        "traffic": 1200.0
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "service",
+      "type": "nominal",
+      "sort": null
+    },
+    "y": {
+      "field": "traffic",
+      "type": "quantitative"
+    }
+  },
+  "title": "Traffic by Service (Top 12)"
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Intent Mix (by keywords)",
+  "data": {
+    "values": [
+      {
+        "intent": "commercial",
+        "keywords": 6639
+      },
+      {
+        "intent": "informational",
+        "keywords": 3995
+      },
+      {
+        "intent": "transactional",
+        "keywords": 181
+      },
+      {
+        "intent": "navigational",
+        "keywords": 235
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "intent",
+      "type": "nominal",
+      "sort": null
+    },
+    "y": {
+      "field": "keywords",
+      "type": "quantitative"
+    }
+  },
+  "title": "Intent Mix (by keywords)"
+}
